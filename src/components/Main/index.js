@@ -12,19 +12,37 @@ const StyledLink = styled(Link)`
 export function Main() {
 
     const data = useStaticQuery(graphql`
-    query {
-      alldata {
-   
+  query {
+    alldata {
+      
+mains {
+    titleprincipalmain
+    paragraphmain
+    aovivo
+    biblioteca
+    areasdetrabalho
+    exporteecompartilhe
+}
+  }
+  }
+    `)
 
-      }
-    }
-      `)
-  
-    const {  } = data.alldata.headers[0];
+    const {titleprincipalmain,
+    paragraphmain,
+    aovivo,
+    biblioteca,
+    areasdetrabalho,
+    exporteecompartilhe } = data.alldata.mains[0];
   
     return (
 <S.Container>
     <h1> Estou na Main </h1>
+    <p> {titleprincipalmain } </p>
+     <p> { paragraphmain} </p>
+      <p> {aovivo } </p>
+       <p> { biblioteca} </p>
+        <p> { areasdetrabalho} </p>
+         <p> {exporteecompartilhe } </p>
 
 </S.Container>
 

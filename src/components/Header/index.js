@@ -47,13 +47,13 @@ export function Header() {
     return (
 <S.Container>
     <S.Menu>
-    <img src ={logoheader} alt=""/>
-    <ul>
-        <li>{blog}</li>
-        <li> {faq} </li>
-        <button> {btnentrar}</button>
-        <button> {btnpt} </button>
-    </ul>
+    <img src ={logoheader.url} alt=""/>
+   
+        <h2 className="blog">{blog}</h2>
+        <h2 className="faq"> {faq} </h2>
+        <button className="btnEnter"> {btnentrar}</button>
+        <button className="btnPt"> {btnpt} </button>
+   
     </S.Menu>
 <S.ContainerBoxHeader> 
 <S.BoxOne>
@@ -63,7 +63,7 @@ export function Header() {
 </S.BoxOne>
 
 <S.BoxTwo>
-<img src={imgheader} alt=""/>
+<img src={imgheader.url} alt=""/>
 
 </S.BoxTwo>
 

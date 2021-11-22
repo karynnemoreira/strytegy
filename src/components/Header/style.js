@@ -2,23 +2,54 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 width: 100%;
-height: 100vh;
-background: rgb(159,3,3);
-background: linear-gradient(90deg, rgba(159,3,3,1) 6%, rgba(1,1,1,1) 21%, rgba(230,7,7,1) 37%, rgba(0,0,0,1) 48%, rgba(195,16,16,1) 62%, rgba(3,2,1,1) 73%, rgba(15,10,3,0.969625350140056) 79%, rgba(25,3,3,1) 82%, rgba(173,59,44,1) 100%);
 `
 
 export const Menu=styled.div`
+border: solid red;
 
+display: flex;
+justify-content: space-around;
+align-items: center;
+heigth: 20vh;
+background-color: white;
+img{
+    width: 15%;
+}
+.blog{
+text-transform: capitalize;
+}
+.faq{
+        text-transform: uppercase;
+}
+
+.btnEnter{
+    text-transform: capitalize;
+
+}
+.btnPt{
+    border-radius: 50%;
+    text-transform: uppercase;
+}
 `
 
 export const ContainerBoxHeader=styled.div`
-
+display: flex;
+align-items: center;
+border: solid #000;
 `
 
 export const BoxOne=styled.div`
-
+h2{
+    margin-left: 2rem;
+    font-size: 4rem;
+}
+p{
+    font-size: 28px;
+margin-left: 2rem;
+}
 `
 
 export const BoxTwo=styled.div`
-
+img{
+}
 `
